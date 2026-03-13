@@ -197,50 +197,77 @@ Users can interact with the dataset using natural language queries.
 
 # Installation
 
-Clone the repository
+## 1. Clone the Repository
 
-
+```bash
 git clone https://github.com/gaurimk/ai-data-analyst-agent.git
 cd ai-data-analyst-agent
+```
 
-Create a virtual environment
+---
+
+## 2. Create Virtual Environment
+
+```bash
 python -m venv venv
 source venv/bin/activate
+```
 
-Install dependencies
+For Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-Running the Application
+---
+
+# Running the Application
+
+Start the Streamlit application:
+
+```bash
 streamlit run app/streamlit_app.py
+```
 
-Use Cases
+Open the application in your browser:
 
-Automated exploratory data analysis
+```
+http://localhost:8501
+```
 
-AI-powered business intelligence
+---
 
-Conversational analytics
+# Use Cases
 
-Data exploration for non-technical users
+- Automated exploratory data analysis  
+- AI-powered business intelligence  
+- Conversational analytics  
+- Data exploration for non-technical users  
+- AI-assisted dashboard preparation  
 
-AI-assisted dashboard preparation
+---
 
-Future Improvements
+# Future Improvements
 
-Support for larger datasets
+- Support for larger datasets  
+- Natural language to SQL queries  
+- Advanced chart recommendation system  
+- Real-time data streaming  
+- Integration with additional BI tools  
 
-Natural language to SQL queries
+---
 
-Advanced chart recommendation system
+# Author
 
-Real-time data streaming
+**Gauri Mahadev**
 
-Integration with additional BI tools
-
-Author
-
-Gauri Mahadev
-
-GitHub
+GitHub:  
 https://github.com/gaurimk
-
