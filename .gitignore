@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# System files
+.DS_Store
+
+# Streamlit cache
+.streamlit/
+
+# Data generated during runtime
+data/processed/*
+data/vector_db/*
+data/uploaded/*
+
+# Ignore tests
+tests/
+
+# IDE
+.vscode/
+.idea/
