@@ -73,89 +73,107 @@ This project combines **Large Language Models (LLMs), AI agents, automated explo
 
 ---
 
-# Project Architecture
-User
-↓
-Streamlit Interface
-↓
-LangGraph Orchestrator
-↓
-AI Agents
-├── Data Agent
-├── Visualization Agent
-├── Insight Agent
-└── Chat Agent
-↓
-MCP Tool Layer
-↓
-Analytics Tools
-├── Data Analysis Tool
-├── Visualization Tool
-├── RAG Search Tool
-└── Tableau Export Tool
-↓
-Vector Database (ChromaDB)
-↓
-LLM (Ollama)
+## Project Architecture
 
+```text
+User
+ │
+ ▼
+Streamlit Interface (UI)
+ │
+ ▼
+LangGraph Orchestrator
+ │
+ ▼
+AI Agents
+ ├── Data Agent
+ │     └── Performs exploratory data analysis
+ │
+ ├── Visualization Agent
+ │     └── Generates charts automatically
+ │
+ ├── Insight Agent
+ │     └── Produces AI-generated insights
+ │
+ └── Chat Agent
+       └── Handles natural language queries
+ │
+ ▼
+MCP Tool Layer
+ │
+ ▼
+Analytics Tools
+ ├── Data Analysis Tool
+ ├── Visualization Tool
+ ├── RAG Search Tool
+ └── Tableau Export Tool
+ │
+ ▼
+Vector Database
+ChromaDB
+ │
+ ▼
+LLM
+Ollama (Local Large Language Model)
+```
 
 ---
 
-# Project Structure
+## Project Structure
+
+```text
 ai-data-analyst-agent
 │
 ├── agents
-│ ├── chart_agent.py
-│ ├── chat_agent.py
-│ ├── data_agent.py
-│ ├── insight_agent.py
-│ ├── orchestrator_agent.py
-│ ├── rag_agent.py
-│ └── viz_agent.py
+│   ├── chart_agent.py
+│   ├── chat_agent.py
+│   ├── data_agent.py
+│   ├── insight_agent.py
+│   ├── orchestrator_agent.py
+│   ├── rag_agent.py
+│   └── viz_agent.py
 │
 ├── tools
-│ ├── data_analysis_tool.py
-│ ├── visualization_tool.py
-│ ├── rag_search_tool.py
-│ └── tableau_export_tool.py
+│   ├── data_analysis_tool.py
+│   ├── visualization_tool.py
+│   ├── rag_search_tool.py
+│   └── tableau_export_tool.py
 │
 ├── rag
-│ ├── document_loader.py
-│ ├── embeddings.py
-│ └── vector_store.py
+│   ├── document_loader.py
+│   ├── embeddings.py
+│   └── vector_store.py
 │
 ├── models
-│ └── ollama_client.py
+│   └── ollama_client.py
 │
 ├── graph
-│ └── agent_graph.py
+│   └── agent_graph.py
 │
 ├── mcp
-│ └── mcp_server.py
+│   └── mcp_server.py
 │
 ├── app
-│ └── streamlit_app.py
+│   └── streamlit_app.py
 │
 ├── assets
-│ ├── 1.png
-│ ├── 2.png
-│ ├── 3.png
-│ ├── 4.png
-│ ├── 5.png
-│ ├── 6.png
-│ └── 7.png
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   ├── 5.png
+│   ├── 6.png
+│   └── 7.png
 │
 ├── config
-│ └── settings.py
+│   └── settings.py
 │
 ├── data
-│ └── docs
+│   └── docs
 │
 ├── requirements.txt
 └── README.md
-
-
----
+```
 
 # How It Works
 
@@ -271,3 +289,4 @@ http://localhost:8501
 
 GitHub:  
 https://github.com/gaurimk
+
